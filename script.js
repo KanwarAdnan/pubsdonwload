@@ -20,11 +20,11 @@ function downloadResults() {
         return;
     }
 
-    let apiUrl = `https://api_last-1-j0851899.deta.app/generate_card?semester=${semester}&roll_number=${rollNumber}`;
+    let apiUrl = `https://api_last-1-j0851899.deta.app/generate_card`;
 
     const data = {
         semester: parseInt(semester),
-        roll_number: parseInt(rollNumber),
+        roll_no: parseInt(rollNumber),
     };
 
     fetch(apiUrl, {
